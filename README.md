@@ -1,67 +1,7 @@
 Chess Tournament Management System
 This project is a Django-based application for managing chess tournaments. The system allows administrators to create tournaments, manage participants, generate pairings based on the Swiss-system rules, and update match results. Regular users can view tournament details and rankings but have restricted access to management features.
 
-Table of Contents
-Features
-Project Structure
-Requirements
-Setup and Installation
-Running the Application
-API Endpoints
-Running Tests
-Contributing
-License
-Features
-User authentication and authorization using JWT.
-Admin management of tournaments, participants, and matches.
-Automatic generation of match pairings using the Swiss-system rules.
-View and filter tournament rankings.
-Dockerized setup for easy deployment and development.
-Project Structure
-markdown
-Copy code
-chess_tournament_management_system/
-│
-├── users/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── urls.py
-│   ├── views.py
-│
-├── tournaments/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── urls.py
-│   ├── views.py
-│   ├── tests.py
-│
-├── chess_tournament_management_system/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│
-├── docker-compose.yml
-├── Dockerfile
-├── manage.py
-├── requirements.txt
-└── README.md
-Requirements
-Docker
-Docker Compose
-Setup and Installation
-Clone the Repository
 
-sh
 Copy code
 git clone https://github.com/yourusername/chess_tournament_management_system.git
 cd chess_tournament_management_system
